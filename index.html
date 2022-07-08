@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vegan Shop</title>
+        <link rel="icon" href="./img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        
+    </head>
+
+    <body>
+        <ul>
+			<li><a href="#home" class="active">Início</a></li>
+			<li><a href="#news">Novidades</a></li>
+			<li><a href="#roupas">Vestuário</a></li>
+			<li><a href="#shoes">Calçados</a></li>
+            <li><a href="#acessorios">Acessórios</a></li>
+            <li><a href="#promocao">Ofertas</a></li>
+            <li><a href="#pedidos">Meus pedidos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Sobre nós</a></li>
+		</ul>
+            <section class="container">
+                <h1>VEGAN SHOP</h1>
+				<h2>Seja mais um abduzido você também!</h2>
+                <h1 id="frase">Sustentabilidade, ecologia e inovação, junte-se a revolução vegana, por amor. <3 </h1>
+                
+                <div style="float: left">
+                    <img src="./img/vaca-abduzida (1).png" alt="futuro" width="360" height="390">
+                </div>
+                <div style="float: right">
+                    <img src="./img/porco-voador1.png" alt="futuro" width="300" height="360">
+                </div>
+            </section>
+
+            <section class="cadastro_usuario">
+                <h2 class="cadastro_titulo">Complete seu cadastro</h2>
+                <form action="./cadastro_concluido.html" class="formulario">
+                    <fieldset>
+                        <legend class="info_basica"><br>Informações básicas</legend>
+                        <div class="input-container">
+                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+                            <label class="input-label" for="nome">Nome</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                            <label class="input-label" for="email">Email</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="senha" id="senha" class="input" type="password" placeholder="Senha" 
+                            pattern="^([ a-zA-Z0-9@ *#]{8,15})$" title="A senha deve ter no mínimo 8 caracteres 
+                            e no máximo 15 caracteres." required>
+                            <label class="input-label" for="senha">Senha</label>
+                        </div>
+                    
+                        <legend class="info_pessoal">Informações pessoais</legend>
+                        <div class="input-container">
+                            <input name="nascimento" id="nascimento" class="input" type="date" 
+                            placeholder="Data de nascimento" required>
+                            <label class="input-label" for="nascimento">Data de nascimento</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF" maxlength="11" minlength="11" required>
+                            <label class="input-label" for="cpf">CPF</label>
+                        </div>
+                   
+                        <legend class="info_endereco">Localidade</legend>
+                        <div class="input-container">
+                            <input name="cep" id="cep" class="input" type="text" placeholder="CEP" required>
+                            <label class="input-label" for="cep">CEP</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="endereco" id="endereco" class="input" type="text" placeholder="Endereço" required>
+                            <label class="input-label" for="endereco">Endereço</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" required>
+                            <label class="input-label" for="cidade">Cidade</label>
+                        </div>
+                        <div class="input-container">
+                            <input name="estado" id="estado" class="input" type="text" placeholder="Estado" required>
+                            <label class="input-label" for="estado">Estado</label>
+                        </div><br>
+                        <button id="botao-cadastro" class="botao">Cadastrar</button>
+                        
+                    </fieldset>
+                    
+                </form>
+            </section> 
+        <script src="./js/validacao.js"></script>
+    
+</body>
+</html>
